@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>Magic 8 Ball</h1>
+    <div class="question_container">
+    <label>ask the all knowing your question</label>
+    <input></input>
+    <button id="ask_button">ASK</button>
+  </div>
+
+  <div class="eightball">
+    <div class="eightball_center">
+      <div id="eightball_triangle">
+        <p id="eightball_reply"></p>
+    </div>
+    </div>
+  </div>
+    
+  </body>
+  <script type="text/javascript">
+    let replyArray = [
+      "It is certain",
+      "It is decidedly so",
+      "Without a doubt",
+      "Yes - definitely",
+      "You may rely on it",
+      "As I see it, yes",
+      "Most likely",
+      "Outlook good",
+      "Yes",
+      "Signs point to yes",
+      "Don't count on it",
+      "My reply is no",
+      "My sources say no",
+      "Outlook not so good",
+      "Very doubtful",
+      "Reply hazy, try again",
+      "Ask again later",
+      "Better not tell you now",
+      "Cannot predict now",
+      "Concentrate and ask again"
+    ];
+    let eightBallReply = document.getElementById("eightball_reply")
+    
+    ask_button.addEventListener("click", function(){
+      let reply = replyArray[Math.floor(Math.random()*replyArray.length)];
+      eightBallReply.innerText = reply
+      
+    })
+  </script>
+</html>

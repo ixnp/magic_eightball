@@ -1,0 +1,40 @@
+.question_container lable {
+    display: block;
+  }
+  .question_container input {
+    display: block;
+  }
+  
+  #eightball_triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid blue;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #eightball_reply {
+    color: white;
+    font-size: 10px;
+  }
+  .eightball_center {
+    padding: 10px;
+    background: grey;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .eightball {
+    padding: 20px;
+    background: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
